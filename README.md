@@ -34,6 +34,26 @@ behavior while iterating.
 └── README.md
 ```
 
+## Editor setup (VS Code)
+
+This is the easiest way to work on the project. Open the folder:
+
+```bash
+code ~/cpp-lab
+```
+
+Then, inside VS Code:
+
+- **`Ctrl+Shift+B`** — build (runs `make debug`). Errors appear under the *Problems* tab.
+- **`F5`** — build and start the debugger. Click in the gutter to set breakpoints.
+- **`Ctrl+F5`** — build and run without the debugger.
+- **Source Control panel** (left sidebar, the branch icon) — type a message, click
+  the **✓ Commit** button, then **Sync Changes** to push to GitHub. No terminal needed.
+
+The repo already contains everything needed: `.vscode/tasks.json` (build task),
+`.vscode/launch.json` (gdb debugger), and `.vscode/c_cpp_properties.json`
+(IntelliSense include paths and C++20).
+
 ## Editor setup (Zed)
 
 The repo ships with:
