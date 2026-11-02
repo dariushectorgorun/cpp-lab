@@ -1,0 +1,23 @@
+# Build output
+build/
+bin/
+out/
+*.o
+*.obj
+*.exe
+*.out
+*.d
+
+# CMake (if you add it later)
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
