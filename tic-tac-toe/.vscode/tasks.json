@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build (debug)",
+      "type": "shell",
+      "command": "make",
+      "args": ["debug"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"],
+      "presentation": { "reveal": "silent", "panel": "shared" }
+    },
+    {
+      "label": "build (release)",
+      "type": "shell",
+      "command": "make",
+      "args": [],
+      "group": "build",
+      "problemMatcher": ["$gcc"],
+      "presentation": { "reveal": "silent", "panel": "shared" }
+    }
+  ]
+}

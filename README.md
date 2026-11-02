@@ -21,6 +21,11 @@ make clean      # remove build/
 `make sanitize` is the quickest way to catch memory errors and undefined
 behavior while iterating.
 
+## Projects
+
+- [tic-tac-toe](tic-tac-toe/) — terminal tic-tac-toe. Board, input and game loop
+  are done; win and draw detection are left as exercises.
+
 ## Layout
 
 ```
