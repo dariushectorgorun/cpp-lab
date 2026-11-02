@@ -13,8 +13,7 @@ CMakeFiles/
 CMakeCache.txt
 cmake-build-*/
 
-# IDE / editor
-.vscode/
+# IDE / editor (project configs in .vscode/ and .zed/ are tracked)
 .idea/
 *.swp
 *~
