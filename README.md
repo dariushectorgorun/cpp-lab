@@ -28,8 +28,8 @@ behavior while iterating.
 ├── include/         # public headers
 ├── src/             # source files
 ├── .clangd          # flags for clangd (editor intelligence)
-├── .clang-format    # formatting rules, used by clangd's formatter
-├── .zed/            # Zed project config (debugger + format on save)
+├── .clang-format    # formatting rules
+├── .vscode/         # VS Code build/debug/IntelliSense config
 ├── Makefile
 └── README.md
 ```
@@ -53,20 +53,6 @@ Then, inside VS Code:
 The repo already contains everything needed: `.vscode/tasks.json` (build task),
 `.vscode/launch.json` (gdb debugger), and `.vscode/c_cpp_properties.json`
 (IntelliSense include paths and C++20).
-
-## Editor setup (Zed)
-
-The repo ships with:
-
-- `.clangd` — gives clangd the include path and language standard, so no
-  `compile_commands.json` is needed. Without this, clangd guesses and reports
-  false errors on standard headers.
-- `.zed/debug.json` — a ready-made debug configuration. Press `F4`
-  (*debugger: start*), pick **Debug app (CodeLLDB)**, and it runs `make debug`
-  before launching. The first launch prompts to install the CodeLLDB extension.
-  If you prefer GDB, change `"adapter": "CodeLLDB"` to `"adapter": "GDB"`
-  (needs `gdb` 14.1+).
-- `.zed/settings.json` — format on save for C++.
 
 ## Adding a project
 
